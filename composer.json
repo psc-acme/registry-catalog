@@ -1,0 +1,39 @@
+{
+    "name": "psc-acme/registry-catalog",
+    "description": "Package registry-catalog for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\RegistryCatalog\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "aws/aws-sdk-php": "^3.332",
+        "doctrine/doctrine-bundle": "^2.13",
+        "vlucas/phpdotenv": "^5.0"
+    },
+    "require-dev": {
+        "rector/rector": "^1.0",
+        "mockery/mockery": "^1.6",
+        "friendsofphp/php-cs-fixer": "^3.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
